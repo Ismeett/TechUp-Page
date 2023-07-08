@@ -8,13 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="bg-[#F7EDE8]">
-    
+    <div class="bg-[#F7EDE8]">    
         <!-- Nav -->
         <div class="container mx-auto py-4">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center md:justify-between md:items-center justify-center">
             <img src="/logo.png" >
-            <ul class="flex space-x-6 font-bold text-lg w-6/12">
+            <ul class="md:flex space-x-6 font-bold text-lg w-6/12 hidden">
                 <li>Episodes</li>
                 <li>About</li>
                 <div class="flex space-x-2 items-center">
@@ -22,7 +21,7 @@
                 <img src="/Arrow - Down.png" alt="">
             </div>
             </ul>
-            <div>
+            <div class="hidden md:block">
                 <button class="border border-black px-6 py-2 rounded font-bold uppercase tracking-wider mr-5">Recent Episodes</button>
                 <button class="shadow-[5px_5px_rgba(0,0,0,0.3)] px-8 py-2 text-white uppercase bg-black rounded font-bold tracking-wider">Subscribe</button>
             </div>
@@ -32,10 +31,10 @@
     
         <!-- Main Section -->
         <div class="py-20 relative">
-            <img src="/Hero Shape Swirl.svg" class="absolute left-0 top-0">
-            <img src="/stars.png" class="absolute right-24">
+            <img src="/Hero Shape Swirl.svg" class="absolute left-0 top-0 hidden md:block">
+            <img src="/stars.png" class="absolute right-24 hidden md:block">
             <div class="flex flex-col justify-center items-center">
-                <h1 class="font-bold text-9xl text-center">Your Daily <br><span class="text-[#CD4631]">Podcast</span></h1>
+                <h1 class="font-bold md:text-9xl text-center text-5xl">Your Daily <br><span class="text-[#CD4631]">Podcast</span></h1>
                 <p class="text-center text-[#4D4D4D] font-medium py-10">We cover all kinds of categories and <br> a weekly special guest.</p>
                 <button class="shadow-[5px_5px_rgba(0,0,0,0.3)] px-10 py-4 text-white uppercase bg-black rounded-lg font-bold tracking-wider">Subscribe</button>
             </div>
@@ -44,7 +43,7 @@
     
         <!-- Slider -->
         <div class="container mx-auto pb-20">
-            <div class="grid grid-cols-3 gap-20">
+            <div class="grid  md:grid-cols-3 gap-20 md:gap-10">
                 <div class="bg-white py-4">
                     <div class="flex justify-center">
                     <img src="/vector.png" alt="">
@@ -63,7 +62,7 @@
                     <div class="flex justify-center">
                     <img src="/vector-3.png" class="w-[97%]">
                 </div>
-                    <p class="text-4xl text-[#81ADC8] font-bold ml-10">Women's Rights</p>
+                    <p class="text-4xl text-[#81ADC8] font-bold ml-10 mt-14">Women's Rights</p>
                 </div>
             </div>
         </div>
@@ -72,9 +71,9 @@
         <!-- Sponsors -->
         <div class="pt-20 pb-32">
         <div class="container mx-auto py-10 border-t border-b border-black">
-            <div class="flex justify-between">
-                <p class="font-bold text-2xl">Supported by:</p>
-                <div class="w-8/12 flex justify-around items-center">
+            <div class="flex md:justify-between flex-col md:flex-row items-center justify-center">
+                <p class="font-bold text-2xl pb-5">Supported by:</p>
+                <div class="w-8/12 flex justify-around items-center md:flex-row flex-col space-y-5">
                     <img src="/Spotify.png" alt="">
                     <img src="/Google Podcast.png" alt="">
                     <img src="/Youtube.png" alt="">
@@ -89,20 +88,20 @@
     <div class="container mx-auto relative py-32">
         <img src="/Vector 29.png" class="absolute -top-20 left-1/2">
         <div class="flex justify-center items-center">
-            <p class="text-6xl font-bold text-center">Talk. Listen. Get inspired <br>by every minute of it.</p>
+            <p class="md:text-6xl text-3xl font-bold text-center">Talk. Listen. Get inspired <br>by every minute of it.</p>
         </div>
-        <div class="grid grid-cols-2">
+        <div class="grid md:grid-cols-2">
             <div class="p-20">
                 <div class="flex justify-center py-12">
                 <img src="/Illustration 01.svg" alt="">
             </div>
-                <p class="text-center font-medium text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur ac ultrices odio. </p>
+                <p class="text-center font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur ac ultrices odio. </p>
             </div>
             <div class="p-20">
                 <div class="flex justify-center py-12">
                     <img src="/Illustration 02.svg" alt="">
                 </div>
-                <p class="text-center font-medium text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur ac ultrices odio. </p>
+                <p class="text-center font-medium text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Curabitur ac ultrices odio. </p>
             </div>
         </div>
     </div>
@@ -110,11 +109,11 @@
     
     <!-- Third Section -->
     <div class="container mx-auto relative mb-40">
-        <img src="/Star 4.png" class="absolute -right-8 -top-12">
-        <img src="/sling.png" class="absolute bottom-10 -left-8">
+        <img src="/Star 4.png" class="absolute -right-8 -top-12 hidden md:block">
+        <img src="/sling.png" class="absolute bottom-10 -left-8 hidden md:block">
         <div class="bg-[#F7EDE8] flex flex-col justify-center items-center">
-            <p class="text-6xl text-[#CD4631] text-8xl pt-10">''</p>
-            <p class="text-4xl font-bold text-center">One of the best daily podcasts that <br>
+            <p class="text-[#CD4631] md:text-8xl text-5xl pt-10">''</p>
+            <p class="md:text-4xl text-2xl font-bold text-center">One of the best daily podcasts that <br>
                 covers every topic on Spotify.</p>
                 <div class="flex items-center py-10">
                     <p class="font-medium">John Smith,</p>
@@ -133,18 +132,18 @@
         <img src="/black i zi.png" class="absolute -top-20 left-1/2">
         <div class="flex flex-col justify-center items-center">
             <div class="w-6/12 relative">
-            <img src="/Sparkle.png" class="absolute -top-16 -left-5">
-            <p class="text-6xl font-bold text-center">What our listeners say</p>
-            <p class="font-medium text-xl text-center mt-4">Their experience throughout every platform</p>
+            <img src="/Sparkle.png" class="absolute md:-top-16 md:-left-20 -left-14 -top-16">
+            <p class="md:text-6xl text-3xl font-bold text-center">What our listeners say</p>
+            <p class="font-medium md:text-xl text-center mt-4">Their experience throughout every platform</p>
         </div>
         </div>
         <!-- Slider -->
-        <div class="pt-28 grid grid-cols-2 gap-5">
+        <div class="pt-28 grid md:grid-cols-2 gap-5">
             <div class="bg-white p-12">
                 <p class="font-bold text-8xl text-[#CD4631]">"</p>
                 <p class="font-medium text-2xl">Lorem ipsum dolor sit amet consectet <br> 
                 piscing elit, sed do eiusmod tempor incidi <br> ut labore et dolore magna aliqua. </p>
-                <div class="flex items-center space-x-2 pt-10 ml-12">
+                <div class="flex items-center space-x-2 pt-10 md:ml-12">
                     <p class="font-medium">Luna lovegood,</p>
                     <img src="/mini-mini-spotify.png" alt="">
                 </div>
@@ -153,14 +152,14 @@
                 <p class="font-bold text-8xl text-[#CD4631]">"</p>
                 <p class="font-medium text-2xl">Lorem ipsum dolor sit amet consectet <br> 
                 piscing elit, sed do eiusmod tempor incidi <br> ut labore et dolore magna aliqua. </p>
-                <div class="flex items-center space-x-2 pt-10 ml-12">
+                <div class="flex items-center space-x-2 pt-10 md:ml-12">
                     <p class="font-medium">Emily Blunt,</p>
                     <img src="/mini-mini-google.png" alt="">
                 </div>
             </div>
         </div>
         <!-- Slider -->
-        <div class="flex py-10 space-x-6">
+        <div class="flex py-10 md:ml-0 ml-5 space-x-6">
             <div class="w-10 border-[3px] border-black rounded-full h-10 flex items-center justify-center">
                 <img src="/left-arrow.png" alt="">
             </div>
@@ -177,12 +176,12 @@
     <img src="/black i zi.png" class="absolute -top-20 left-1/2">
     <div class="flex flex-col justify-center items-center">
         <div class="w-7/12 relative">
-        <img src="/lines.png" class="absolute -top-16 right-10">
-        <p class="text-6xl font-bold text-center">Membership benefits</p>
+        <img src="/lines.png" class="absolute md:-top-16 md:right-10 -right-6 -top-8 md:w-44 w-1/2">
+        <p class="md:text-6xl text-3xl font-bold text-center">Membership benefits</p>
         <p class="font-medium text-xl text-center mt-6 text-[#4D4D4D]">Become our sponsor and get all benefits</p>
     </div>
     </div>
-    <div class="grid grid-cols-3 gap-20 py-20">
+    <div class="grid md:grid-cols-3 gap-20 py-20">
         <div class="flex flex-col justify-center items-center">
             <img src="/Scribble.png" alt="">
             <p class="font-bold text-2xl py-6">Topic by Request</p>
@@ -236,16 +235,15 @@
     <div class="py-32 container mx-auto relative">
         <img src="/black i zi.png" class="absolute -top-20 left-1/2">
         <div class="flex flex-col justify-center items-center">
-            <p class="text-6xl font-bold">Recent Episodes</p>
-            <p class="font-medium mt-6 text-[#4D4D4D] text-2xl">Available on your favorite platform</p>
+            <p class="md:text-6xl text-3xl font-bold">Recent Episodes</p>
+            <p class="font-medium mt-6 text-[#4D4D4D] md:text-2xl text-lg">Available on your favorite platform</p>
         </div>
 
 
-        <div class="grid grid-cols-2 gap-5 py-32 relative ">
-            <img src="/Sparkle-incards.png" class="absolute -right-20 ">
-
+        <div class="grid md:grid-cols-2 gap-5 py-32 relative ">
+            <img src="/Sparkle-incards.png" class="absolute -right-20 hidden md:block">
             <div class="bg-white p-10 border-[3px] border-black rounded-lg shadow-[10px_10px_rgba(0,0,0,0.3)] shadow-[#81ADC8]">
-                <div class="flex justify-between items-center">
+                <div class="md:flex justify-between items-center">
                     <img src="/cover.png">
                     <div>
                         <p class="text-[#CD4631] font-bold my-4 text-xl">Eps. 6</p>
@@ -253,18 +251,18 @@
                         <p class="text-lg border-t border-black text-[#4D4D4D] pt-4 font-medium">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur ac ultrices odio. </p>
                     </div>
                 </div>
-                <div class="flex justify-between mt-12">
+                <div class="md:flex justify-between mt-12">
                     <div>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">covid-19</button>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">health</button>
                 </div>
-                <p class="text-[#4D4D4D] font-bold mr-20">Hosted by: </p>
+                <p class="text-[#4D4D4D] font-bold mr-20 hidden md:block">Hosted by: </p>
                 </div>
             </div>
 
 
             <div class="bg-white p-10 border-[3px] border-black rounded-lg">
-                <div class="flex justify-between items-center">
+                <div class="md:flex justify-between items-center">
                     <img src="/cover-2.png">
                     <div>
                         <p class="text-[#CD4631] font-bold my-4 text-xl">Eps. 5</p>
@@ -272,18 +270,18 @@
                         <p class="text-lg border-t border-black text-[#4D4D4D] pt-4 font-medium">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur ac ultrices odio. </p>
                     </div>
                 </div>
-                <div class="flex justify-between mt-12">
+                <div class="md:flex justify-between mt-12">
                     <div>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">automation</button>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">tech</button>
                 </div>
-                <p class="text-[#4D4D4D] font-bold mr-14">Hosted by: </p>
+                <p class="text-[#4D4D4D] font-bold mr-14 hidden md:block">Hosted by: </p>
                 </div>
             </div>
 
 
             <div class="bg-white p-10 border-[3px] border-black rounded-lg">
-                <div class="flex justify-between items-center">
+                <div class="md:flex justify-between items-center">
                     <img src="/cover-3.png">
                     <div>
                         <p class="text-[#CD4631] font-bold my-4 text-xl">Eps. 4</p>
@@ -291,16 +289,16 @@
                         <p class="text-lg border-t border-black text-[#4D4D4D] pt-4 font-medium">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur ac ultrices odio. </p>
                     </div>
                 </div>
-                <div class="flex justify-between mt-12">
+                <div class="md:flex justify-between mt-12">
                     <div>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">women's rights</button>
                 </div>
-                <p class="text-[#4D4D4D] font-bold mr-10">Hosted by: </p>
+                <p class="text-[#4D4D4D] font-bold mr-10 hidden md:block">Hosted by: </p>
                 </div>
             </div>
 
                         <div class="bg-white p-10 border-[3px] border-black rounded-lg shadow-[10px_10px_rgba(0,0,0,0.3)] shadow-[#81ADC8]">
-                <div class="flex justify-around items-center">
+                <div class="md:flex justify-around items-center">
                     <img src="/cover-4.png">
                     <div>
                         <p class="text-[#CD4631] font-bold my-4 text-xl">Eps. 3</p>
@@ -308,17 +306,17 @@
                         <p class="text-lg border-t border-black text-[#4D4D4D] pt-4 font-medium">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur ac ultrices odio. </p>
                     </div>
                 </div>
-                <div class="flex justify-between mt-12">
+                <div class="md:flex justify-between mt-12">
                     <div>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">self-esteem</button>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">health</button>
                 </div>
-                <p class="text-[#4D4D4D] font-bold mr-10">Hosted by: </p>
+                <p class="text-[#4D4D4D] font-bold mr-10 hidden md:block">Hosted by: </p>
                 </div>
             </div>
 
             <div class="bg-white p-10 border-[3px] border-black rounded-lg shadow-[10px_10px_rgba(0,0,0,0.3)] shadow-[#81ADC8]">
-                <div class="flex justify-around items-center">
+                <div class="md:flex justify-around items-center">
                     <img src="/cover-5.png">
                     <div>
                         <p class="text-[#CD4631] font-bold my-4 text-xl">Eps. 2</p>
@@ -326,17 +324,17 @@
                         <p class="text-lg border-t border-black text-[#4D4D4D] pt-4 font-medium">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. </p>
                     </div>
                 </div>
-                <div class="flex justify-between mt-12">
+                <div class="md:flex justify-between mt-12">
                     <div>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">social class</button>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">wealth</button>
                 </div>
-                <p class="text-[#4D4D4D] font-bold mr-14">Hosted by: </p>
+                <p class="text-[#4D4D4D] font-bold mr-14 hidden md:block">Hosted by: </p>
                 </div>
             </div>
 
                         <div class="bg-white p-10 border-[3px] border-black rounded-lg">
-                <div class="flex justify-around items-center">
+                <div class="md:flex justify-around items-center">
                     <img src="/cover-6.png">
                     <div>
                         <p class="text-[#CD4631] font-bold my-4 text-xl">Eps. 1</p>
@@ -344,12 +342,12 @@
                         <p class="text-lg border-t border-black text-[#4D4D4D] pt-4 font-medium">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Curabitur ac ultrices odio. </p>
                     </div>
                 </div>
-                <div class="flex justify-between mt-12">
+                <div class="md:flex justify-between mt-12">
                     <div>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">mind-behaviour</button>
                     <button class="rounded border border-[#4D4D4D] text-[#4D4D4D] px-4 py-1">health</button>
                 </div>
-                <p class="text-[#4D4D4D] font-bold mr-20">Hosted by: </p>
+                <p class="text-[#4D4D4D] font-bold mr-20 hidden md:block">Hosted by: </p>
                 </div>
             </div>
 
@@ -366,18 +364,18 @@
         <img src="/black i zi.png" class="absolute -top-20 left-1/2">
         <div class="flex flex-col justify-center items-center">
             <div class="w-5/12 relative">
-            <img src="/mini-sparkle.png" class="absolute -top-8 -left-4">
-            <p class="text-6xl font-bold text-center">Become our sponsor</p>
-            <p class="font-medium text-xl text-center mt-6 text-[#4D4D4D]">Get exclusive episodes, merch and more</p>
+            <img src="/mini-sparkle.png" class="absolute md:-top-8 md:left-12 -left-10 -top-8">
+            <p class="md:text-6xl text-2xl font-bold text-center">Become our sponsor</p>
+            <p class="font-medium md:text-xl text-lg text-center mt-6 text-[#4D4D4D]">Get exclusive episodes, merch and more</p>
         </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-5 py-40 relative z-0">
+        <div class="grid md:grid-cols-3 gap-5 py-40 relative">
 
             <div class="border border-black border-[3px] rounded-lg px-16 pt-16 pb-10">
                 <div>
-                    <p class="font-bold text-4xl">Member</p>
-                    <p class="max-w-md font-medium text-[#4D4D4D] mt-6 text-lg">Lorem ipsum dolor sit amet consectet 
+                    <p class="font-bold text-4xl md:text-left text-center">Member</p>
+                    <p class="md:text-left text-center max-w-md font-medium text-[#4D4D4D] mt-6 text-lg">Lorem ipsum dolor sit amet consectet 
                         cing elit, sed do eiusmod tempor.</p>
                 </div>
                 <div class="flex justify-between items-center  mt-28">
@@ -391,11 +389,11 @@
 
             <div class="border border-[#CD4631] bg-[#F7EDE8] border-[3px] rounded-lg px-16 pt-16 pb-10">
                 <div>
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center md:flex-row flex-col">
                     <p class="font-bold text-4xl">Family</p>
-                    <p class="uppercase bg-[#CD4631] text-white px-2 py-1 font-bold tracking-wider rounded-lg">most popular</p>
+                    <p class="uppercase bg-[#CD4631] text-white px-2 py-1 font-bold tracking-wider rounded-lg md:mt-0 mt-4">most popular</p>
                 </div>
-                    <p class="max-w-md font-medium text-[#4D4D4D] mt-6 text-lg">Lorem ipsum dolor sit amet consectet 
+                    <p class="md:text-left text-center max-w-md font-medium text-[#4D4D4D] mt-6 text-lg">Lorem ipsum dolor sit amet consectet 
                         cing elit, sed do eiusmod tempor.</p>
                 </div>
                 <div class="flex justify-between items-center  mt-28">
@@ -408,11 +406,10 @@
             </div>
 
 
-            <div class="border border-black border-[3px] rounded-lg px-16 pt-16 pb-10 relative z-0">
-                <img src="/star-card.png" class="absolute -top-16 -right-20 z-10">
+            <div class="border border-black border-[3px] rounded-lg px-16 pt-16 pb-10">
                 <div>
-                    <p class="font-bold text-4xl">Official</p>
-                    <p class="max-w-md font-medium text-[#4D4D4D] mt-6 text-lg">Lorem ipsum dolor sit amet consectet 
+                    <p class="md:text-left text-center font-bold text-4xl">Official</p>
+                    <p class="md:text-left text-center max-w-md font-medium text-[#4D4D4D] mt-6 text-lg">Lorem ipsum dolor sit amet consectet 
                         cing elit, sed do eiusmod tempor.</p>
                 </div>
                 <div class="flex justify-between items-center  mt-28">
@@ -425,7 +422,7 @@
             </div>
 
             <div class="border border-black border-[3px] rounded-lg px-16 pt-16 pb-24">
-                <div>
+                <div class="md:text-left text-center">
                     <p class="text-[#4D4D4D] font-bold text-lg">What's included:</p>
 
                     <ul class="space-y-4 text-xl font-medium mt-6">
@@ -439,7 +436,7 @@
             </div>
 
             <div class="border border-[#CD4631] bg-[#F7EDE8] border-[3px] rounded-lg px-16 pt-16 pb-24">
-                <div>
+                <div class="md:text-left text-center">
                 <p class="text-[#4D4D4D] font-bold text-lg">What's included:</p>
 
                 <ul class="space-y-4 text-xl font-medium mt-6">
@@ -454,7 +451,7 @@
             </div>
 
             <div class="border border-black border-[3px] rounded-lg px-16 pt-16 pb-24">
-                <div>
+                <div class="md:text-left text-center">
                 <p class="text-[#4D4D4D] font-bold text-lg">What's included:</p>
                 <ul class="space-y-4 text-xl font-medium mt-6">
                 <li class="font-bold">• Everything in Tier 2</li>
@@ -474,12 +471,12 @@
         <img src="/black i zi.png" class="absolute -top-20 left-1/2">
         
         <div class="flex flex-col justify-center items-center">
-            <p class="font-bold text-6xl">Article and News</p>
-            <p class="font-medium text-[#4D4D4D] text-2xl mt-6">News, tips, tricks and more</p>
+            <p class="font-bold md:text-6xl text-3xl">Article and News</p>
+            <p class="font-medium text-[#4D4D4D] md:text-2xl text-lg mt-6">News, tips, tricks and more</p>
         </div>
 
-        <div class="grid grid-cols-2 gap-5 py-20 relative">
-            <img src="/lines-card.png" class="absolute -right-20 -bottom-5">
+        <div class="grid md:grid-cols-2 gap-5 py-20 relative">
+            <img src="/lines-card.png" class="absolute -right-20 -bottom-5 hidden md:block">
 
             <div class="border-[3px] border-black rounded-lg p-10 shadow-[10px_10px_rgba(0,0,0,0.3)] shadow-black">
                 <div class="mt-96">
@@ -492,7 +489,7 @@
                     <button class="border-[#4D4D4D] text-[#4D4D4D] font-medium border px-4 py-1 rounded-lg">business</button>
                     <button class="border-[#4D4D4D] text-[#4D4D4D] font-medium border px-4 py-1 rounded-lg">startup</button>
                 </div>
-                    <p class="font-bold text-[#4D4D4D]">Sep 14, 2021</p>
+                    <p class="font-bold text-[#4D4D4D] hidden md:block">Sep 14, 2021</p>
                 </div>
             </div>
 
@@ -503,13 +500,13 @@
                     <p class="font-bold text-4xl">Doodle artwork 101</p>
                     <p class="font-medium text-[#4D4D4D] my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...</p>
                 </div>
-                <div class="flex justify-between border-t border-[#4D4D4D] pt-4">
+                <div class="md:flex justify-between border-t border-[#4D4D4D] pt-4">
                     <div>
                     <button class="border-[#4D4D4D] text-[#4D4D4D] font-medium border px-4 py-1 rounded-lg">art</button>
                     <button class="border-[#4D4D4D] text-[#4D4D4D] font-medium border px-4 py-1 rounded-lg">creative</button>
                     <button class="border-[#4D4D4D] text-[#4D4D4D] font-medium border px-4 py-1 rounded-lg">tips and trick</button>
                 </div>
-                    <p class="font-bold text-[#4D4D4D]">Sep 12, 2021</p>
+                    <p class="font-bold text-[#4D4D4D] hidden md:block">Sep 12, 2021</p>
                 </div>
             </div>
 
@@ -526,15 +523,15 @@
     <!-- Ninth Section -->
     <div class="bg-[#EDF3F7] relative py-32">
         <img src="/Vector 29.png" class="absolute -top-20 left-1/2">
-        <img src="/play.png" class="w-96 absolute right-0 bottom-0">
-        <img src="/Home.png" class="w-3/12 absolute left-0 bottom-0">
-        <img src="/big sparkle.png" class="absolute bottom-[330px]">
-        <img src="/Sparkle.png" class="absolute bottom-[430px] left-32">
-        <img src="/mini sparke.png" class="absolute left-24 bottom-[530px]">   
+        <img src="/play.png" class="md:w-96 w-36 absolute right-0 bottom-0">
+        <img src="/Home.png" class="md:w-4/12 w-1/2 absolute left-0 bottom-0">
+        <img src="/big sparkle.png" class="md:w-40 w-16 absolute md:bottom-[370px] bottom-36">
+        <img src="/Sparkle.png" class="md:w-32 w-10 absolute md:bottom-[430px] md:left-32 bottom-48 left-12">
+        <img src="/mini sparke.png" class="md:w-10 w-10 absolute md:left-24 md:bottom-[510px] bottom-52 left-2">   
         <div class="flex flex-col justify-center items-center">
                 <button class="uppercase border-2 border-[#CD4631] text-[#CD4631] font-bold px-2 py-1 rounded-lg">beta</button>
-                <p class="font-bold text-6xl text-center my-6">Available now <br> Pod of Cast App</p>
-                <p class="text-[#4D4D4D] font-medium text-xl">We just launched our podcast app!</p>
+                <p class="font-bold md:text-6xl text-3xl text-center my-6">Available now <br> Pod of Cast App</p>
+                <p class="text-[#4D4D4D] font-medium md:text-xl text-lg">We just launched our podcast app!</p>
             </div>
 
             <div class="py-32">
@@ -560,22 +557,24 @@
 
     <div class="container mx-auto py-32">
 
-        <div class="flex justify-between">
+        <div class="md:flex justify-between">
 
             <div>
-                <div class="flex items-end space-x-4">
+                <div class="flex md:justify-start md:items-center items-end justify-center space-x-4">
                 <img src="/logo.png" alt="">
                 <p class="text-[#4D4D4D] font-medium">©2021.</p>
                 </div>
-                <p class="my-12 text-[#4D4D4D] font-medium">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
-                <div class="flex items-center space-x-4">
+                <div class="flex justify-center">
+                    <p class="my-12 text-[#4D4D4D] font-medium">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                </div>
+                <div class="flex items-center md:justify-start justify-center space-x-4">
                     <img src="/twitter orange.png" alt="">
                     <img src="/instagram.png" alt="">
                     <img src="/tiktok.png" alt="">
                 </div>
             </div>
 
-            <div class="flex">
+            <div class="md:flex flex md:justify-start justify-center md:my-0 my-10">
                 <ul class="font-medium text-xl space-y-4 mr-20">
                     <li>About</li>
                     <li class="text-[#CD4631]">Testimonials</li>
@@ -589,16 +588,16 @@
             </div>
 
             <div>
-                <p class="text-lg font-medium text-[#4D4D4D]">Listen to episodes on your fav platform:</p>
-                <div class="flex items-center space-x-10 my-8">
+                <p class="text-lg font-medium text-[#4D4D4D] md:text-left text-center">Listen to episodes on your fav platform:</p>
+                <div class="md:flex flex justify-center items-center space-x-10 my-8">
                     <img src="/google-footer.png" alt="">
                     <img src="/spotify-footer.png" alt="">
                     <img src="/youtube-footer.png" alt="">
                 </div>
 
                 <div class="pt-10">
-                    <p class="text-lg font-medium text-[#4D4D4D]">App available on:</p>
-                    <div class="flex items-center my-6">
+                    <p class="text-lg font-medium text-[#4D4D4D] md:text-left text-center">App available on:</p>
+                    <div class="md:flex flex md:justify-start justify-center items-center my-6">
                         <img src="/app_store.png" alt="">
                         <img src="/google_play.svg" alt="">
                     </div>
@@ -610,10 +609,10 @@
     <!-- Tenth Section -->
 
     <!-- Footer -->
-    <div class="container mx-auto pb-10">
-        <div class="flex justify-between border-t border-[#4D4D4D]">
-            <p class="py-10 font-medium text-[#4D4D4D]">©2022. All Rights Reserved. <span class="text-[#CD4631]">Pod of Cast</span></p>
-            <div class="flex items-center space-x-2">
+    <div class="container mx-auto pb-5">
+        <div class="md:flex justify-between border-t border-[#4D4D4D]">
+            <p class="py-10 font-medium text-[#4D4D4D] md:text-left text-center">©2022. All Rights Reserved. <span class="text-[#CD4631]">Pod of Cast</span></p>
+            <div class="flex items-center justify-center space-x-2">
                 <p class="text-[#4D4D4D] font-medium">Terms</p>
                 <p class="text-[#4D4D4D] font-medium">•</p>
                 <p class="text-[#4D4D4D] font-medium">Privacy</p>
